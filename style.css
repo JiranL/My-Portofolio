@@ -301,7 +301,7 @@ footer strong {
 
 /* Navbar logo */
 .navbar-logo {
-  width: 100px; /* Atur sesuai kebutuhan */
+  width: 78px; /* Atur sesuai kebutuhan */
   transition: filter 0.3s ease;
 }
 
@@ -461,7 +461,7 @@ footer strong {
 }
 @font-face {
   font-family: "Gotham";
-  src: url("font/Gotham.woff2") format("woff2"), url("font/Gotham.woff") format("woff");
+  src: url("font/Gotham.woff2") format("woff2"), url("font/Gotham.woff") format("woff"), url("font/Gotham.ttf") format("truetype"), url("font/Gotham.eot") format("embedded-opentype");
   font-weight: normal;
   font-style: normal;
 }
@@ -479,7 +479,8 @@ body {
 /* Untuk layar dengan lebar maksimal 600px, umumnya perangkat Android kecil */
 @media screen and (max-width: 600px) {
   body {
-    font-size: 30px; /* Sesuaikan ukuran font untuk layar kecil */
+    font-family: "Gotham", Arial, sans-serif; /* Tetapkan font secara eksplisit */
+    font-size: 38px; /* Sesuaikan ukuran font untuk layar kecil */
   }
 
   .navbar .navbar-nav a {
@@ -522,7 +523,8 @@ body {
 /* Untuk layar dengan lebar maksimal 400px, umumnya perangkat Android sangat kecil */
 @media screen and (max-width: 400px) {
   body {
-    font-size: 30px; /* Ukuran font yang lebih kecil lagi */
+    font-family: "Gotham", Arial, sans-serif; /* Tetapkan font secara eksplisit */
+    font-size: 38px; /* Ukuran font yang lebih kecil lagi */
   }
 
   .navbar .navbar-nav a {
