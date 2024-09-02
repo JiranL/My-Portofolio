@@ -424,6 +424,8 @@ footer strong {
   padding: 15px; /* Adjust padding as needed */
   font-size: 18px; /* Adjust font size */
   transition: background-color 0.3s ease, color 0.3s ease;
+  font-family: "Gotham", Arial, sans-serif;
+  font-weight: bold;
 }
 
 .nav-link:hover,
@@ -457,23 +459,17 @@ footer strong {
     font-size: 16px;
   }
 }
-
 @font-face {
-  font-family: "NamaFont";
-  src: url("font/NamaFont.woff2") format("woff2"), url("font/NamaFont.woff") format("woff");
+  font-family: "Gotham";
+  src: url("font/Gotham.woff2") format("woff2"), url("font/Gotham.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 body {
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Gotham", Arial, sans-serif;
 }
 
-@media (max-width: 600px) {
-  body {
-    font-size: 16px;
-  }
-}
 @media (max-width: 600px) {
   body {
     font-size: 16px;
@@ -560,4 +556,3 @@ body {
     font-size: 10px; /* Ukuran teks footer lebih kecil */
   }
 }
-
