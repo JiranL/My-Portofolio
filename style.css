@@ -474,34 +474,90 @@ body {
     font-size: 16px;
   }
 }
-/* CSS dasar untuk semua perangkat */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+@media (max-width: 600px) {
+  body {
+    font-size: 16px;
+  }
 }
 
-/* Untuk layar dengan lebar maksimal 768px */
-@media (max-width: 768px) {
-  .container {
-    width: 100%; /* Membuat elemen selebar layar */
-    padding: 10px;
+/* Untuk layar dengan lebar maksimal 600px, umumnya perangkat Android kecil */
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 14px; /* Sesuaikan ukuran font untuk layar kecil */
   }
 
-  .navbar {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .navbar .navbar-nav a {
+    font-size: 1rem; /* Mengurangi ukuran font navbar */
+    margin: 0 0.5rem; /* Sesuaikan margin */
   }
 
-  .menu-item {
-    padding: 10px;
-    font-size: 18px; /* Ukuran font lebih besar di mobile */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: calc(100% - 10px); /* Sesuaikan ukuran heading */
   }
 
-  /* Mengubah ukuran gambar agar lebih kecil dan responsif */
-  img {
-    max-width: 100%;
+  .lead {
+    font-size: 1rem; /* Ukuran teks paragraf */
+  }
+
+  .rounded-btn {
+    padding: 8px 16px; /* Perkecil padding tombol */
+    font-size: 12px; /* Ukuran font tombol lebih kecil */
+  }
+
+  .social-media ul li a i {
+    font-size: 20px; /* Ukuran ikon sosial media lebih kecil */
+  }
+
+  footer p {
+    font-size: 12px; /* Ukuran teks footer lebih kecil */
+  }
+
+  .card-img-top {
     height: auto;
+    width: 100%;
   }
 }
+
+/* Untuk layar dengan lebar maksimal 400px, umumnya perangkat Android sangat kecil */
+@media screen and (max-width: 400px) {
+  body {
+    font-size: 12px; /* Ukuran font yang lebih kecil lagi */
+  }
+
+  .navbar .navbar-nav a {
+    font-size: 0.9rem; /* Sesuaikan ukuran font navbar */
+    margin: 0 0.3rem; /* Margin lebih kecil */
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: calc(100% - 15px); /* Heading lebih kecil */
+  }
+
+  .lead {
+    font-size: 0.9rem; /* Ukuran teks paragraf lebih kecil */
+  }
+
+  .rounded-btn {
+    padding: 6px 12px; /* Padding tombol lebih kecil */
+    font-size: 11px; /* Ukuran font tombol lebih kecil */
+  }
+
+  .social-media ul li a i {
+    font-size: 18px; /* Ikon sosial media lebih kecil lagi */
+  }
+
+  footer p {
+    font-size: 10px; /* Ukuran teks footer lebih kecil */
+  }
+}
+
