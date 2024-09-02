@@ -479,7 +479,7 @@ body {
 /* Untuk layar dengan lebar maksimal 600px, umumnya perangkat Android kecil */
 @media screen and (max-width: 600px) {
   body {
-    font-size: 14px; /* Sesuaikan ukuran font untuk layar kecil */
+    font-size: 30px; /* Sesuaikan ukuran font untuk layar kecil */
   }
 
   .navbar .navbar-nav a {
@@ -522,7 +522,7 @@ body {
 /* Untuk layar dengan lebar maksimal 400px, umumnya perangkat Android sangat kecil */
 @media screen and (max-width: 400px) {
   body {
-    font-size: 12px; /* Ukuran font yang lebih kecil lagi */
+    font-size: 30px; /* Ukuran font yang lebih kecil lagi */
   }
 
   .navbar .navbar-nav a {
