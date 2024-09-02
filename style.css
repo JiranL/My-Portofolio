@@ -558,3 +558,29 @@ body {
     font-size: 10px; /* Ukuran teks footer lebih kecil */
   }
 }
+
+.intro-text {
+  font-size: 20px; /* Ukuran font default */
+  font-family: "Gotham", sans-serif; /* Gaya font */
+  color: #494949; /* Warna teks */
+  line-height: 1.6; /* Jarak antar baris */
+}
+
+/* Responsif untuk layar kecil */
+@media screen and (max-width: 768px) {
+  .intro-text {
+    font-size: 16px; /* Ukuran font untuk layar sedang */
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .intro-text {
+    font-size: 14px; /* Ukuran font untuk layar kecil */
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .intro-text {
+    font-size: 12px; /* Ukuran font untuk layar sangat kecil */
+  }
+}
